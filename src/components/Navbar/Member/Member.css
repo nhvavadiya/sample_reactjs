@@ -1,0 +1,93 @@
+.project__member .member__profile{
+    height: 45px;
+    width: 45px;
+}
+
+.project__member .invite__btn{
+    background-color: var(--cmt-btn-back);
+    color: #fff;
+    font-weight: 500;
+    border: none;
+    border-radius: 7px !important;
+    cursor: pointer;
+    display: flex;
+    height: 50px;
+    padding: 6px 12px;
+    align-items: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+/* .project__member .modal__content{
+    padding: 30px;
+} */
+
+.project__member .email__input{
+    height: 40px;
+    border-radius: 8px;
+    border: 1px solid #AFABAC;
+    padding: 10px;
+    background: var(--input-background);
+    color: var(--text-color);
+}
+
+.project__member .email__input:focus-visible{
+    outline: none;
+}
+
+.project__member .css-13cymwt-control{
+    width: 100%;
+    background: var(--input-background);
+    color: var(--text-color);
+    border-radius: 8px;
+    height: 50px;
+}
+
+.project__member .css-1dimb5e-singleValue{
+    color: var(--text-color);
+}
+
+.project__member .css-t3ipsp-control{
+    background: var(--input-background);
+    color: var(--text-color);
+    box-shadow: none;
+    height: 50px;
+}
+
+/* .project__member .css-t3ipsp-control:hover{
+    border: 1px solid var(--input-background);
+} */
+
+.member__permission .css-1u9des2-indicatorSeparator{
+    display: none;
+}
+
+.member__permission .css-13cymwt-control{
+    border: none;
+    width: 121px;
+}
+
+.member__permission .css-1nmdiq5-menu{
+    width: 135px;
+}
+
+.member__permission .Dropdown-control{
+    border: none;
+}
+
+.member__permission .Dropdown-menu {
+    box-shadow: 0 0 4px 4px #f1f2f3;
+    border-radius: 8px;
+    border: none;
+    right: -32px;
+}
+
+.member__permission .Dropdown-option{
+    background: transparent;
+    padding: 10px 15px;
+}
+
+.Dropdown-menu div{
+    border-bottom: 1px solid #000;
+}

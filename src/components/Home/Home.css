@@ -1,0 +1,197 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.home__section .project__section {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 60px;
+}
+
+.home__section {
+    background-color: var(--sidebar-background);
+    height: 100vh;
+}
+
+.header__section h5,
+.header__section h3,
+.listing__section h5,
+.project {
+    color: var(--text-color);
+}
+
+.home__section .project__section .create__section button {
+    width: 1200px;
+    height: 80px;
+    border: 2px dashed #AFABAC;
+    border-radius: 8px;
+    background: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    color: var(--add-button-color);
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.home__section .project__section .create__section button:focus {
+    background: var(--input-background);
+    box-shadow: none;
+    color: var(--text-color);
+}
+
+.home__section .project__section .create__section button:hover {
+    box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.25);
+    transition: 0.3s;
+    color: var(--text-color);
+}
+
+.home__section .project__section .create__section button .create__icon {
+    margin: 0 15px;
+}
+
+.home__section .project__section .listing__section {
+    width: 1200px;
+    border: 2px solid #AFABAC;
+    border-radius: 8px;
+    margin-top: 20px;
+    padding: 0 0px 10px;
+    box-sizing: border-box;
+    min-height: 400px;
+    max-height: calc(100vh - 435px);
+    overflow-y: scroll;
+}
+
+.home__section .project__section .listing__section::-webkit-scrollbar {
+    width: 0;
+}
+
+.home__section .project__section .listing__section .listing_title {
+    height: 40px;
+    background: var(--sidebar-background);
+    color: white;
+    padding: 7px 10px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    /* border-bottom: 1px solid rgba(0, 0, 0, 0.041); */
+}
+
+.home__section .project__section .listing__section .project__list {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.home__section .project__section .listing__section .project__list .project {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    border-radius: 16px;
+    padding: 5px 7px;
+    margin: 0 15px;
+    font-size: 18px;
+    font-weight: 500;
+    /* color: #111111; */
+}
+
+.home__section .project__section .listing__section .project__list .project span {
+    margin-right: 15px;
+}
+
+.home__section .project__section .listing__section .project__list .project:hover {
+    /* background-color: rgba(0, 0, 0, 0.04); */
+    background-color: #7e7e7e4a;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.header__section {
+    margin-top: 55px;
+}
+
+
+
+.home__section .addproject__section input {
+    width: 100%;
+    height: 42px;
+    padding: 6px 12px 6px 40px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #AFABAC;
+    font-size: 16px;
+    font-weight: 500;
+    margin-top: 7px;
+    background: var(--input-background);
+    color: var(--text-color);
+}
+
+.home__section .addproject__section input:focus {
+    outline: none;
+}
+
+.home__section .addproject__section span {
+    font-size: 14px;
+    font-weight: 500;
+    color: #111111;
+}
+
+.home__section .addproject__icon {
+    position: absolute;
+    left: 5px;
+    top: 13px;
+}
+
+.home__section .addproject__icon img {
+    width: 30px;
+}
+
+.modal-dialog .modal-content {
+    background: var(--modal-back-color);
+}
+
+.home__section .fade {
+    transition: 0.15s linear;
+    background: rgba(255, 255, 255, 0.3);
+}
+
+.home__section .modal-title {
+    color: var(--text-color);
+}
+
+.home__section .modal-header,
+.home__section .modal-footer {
+    border: none;
+}
+
+.home__section .modal-footer .btn-cancle {
+    border: 1px solid var(--cmt-btn-back);
+    color: var(--cmt-btn-back);
+    border-radius: 8px;
+}
+
+.home__section .modal-footer .btn-create {
+    background-color: var(--cmt-btn-back) !important;
+    color: #fff !important;
+    width: 80px;
+    border-radius: 8px;
+}
+
+@media(max-width:1250px) {
+
+    .home__section .project__section .create__section button,
+    .home__section .project__section .listing__section {
+        width: 90%;
+    }
+
+    .create__section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+}

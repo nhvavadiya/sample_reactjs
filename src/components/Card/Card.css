@@ -1,0 +1,134 @@
+.custom__card {
+  background-color: var(--card-back-color);
+  border-radius: 8px;
+  /* box-shadow: 0px 2px var(--card-box-shadow); */
+  border: 1px solid var(--card-border);
+  margin-inline: auto;
+  padding-inline: 0.5rem;
+  padding-bottom: 0.4rem;
+  /* cursor: grab; */
+  color: var(--text-color);
+  margin-bottom: 10px;
+  min-height: 100px;
+  cursor: pointer;
+  /* position: relative; */
+}
+.custom__card:hover{
+  border: 1px solid var(--card-border-hover);
+}
+
+.car__more {
+  display: none;
+}
+.custom__card:hover svg{
+  display: inline;
+}
+.card__tags {
+  display: flex;
+  column-gap: 5px;
+  row-gap: 5px;
+  flex-wrap: wrap;
+  align-self: flex-start;
+}
+
+.card__text {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.card__text p{
+  margin: 16px 0;
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.car__more {
+  opacity: 0.5;
+  cursor: pointer;
+  width: 40px;
+  /* transform: rotate(90deg); */
+}
+.car__more:hover {
+  opacity: 1;
+  cursor: pointer;
+  transition: ease-in 100ms;
+  
+}
+.card__dropdown {
+  box-shadow: 1px 0px 20px rgba(0, 0, 0, 0.12);
+  cursor: default;
+}
+.card__dropdown > p {
+  border-bottom: 1px solid #f8f8f8;
+  cursor: pointer;
+}
+
+.card__footer {
+  /* margin-top: 8px; */
+  display: flex;
+  justify-content: space-between;
+}
+.card__footer > div > svg {
+  color: rgb(116, 116, 116);
+  cursor: pointer;
+}
+
+.cmt_icon svg, .card__footer > div > svg{
+  height: 18px;
+  width: 18px;
+}
+
+.card__footer div {
+  display: flex;
+  align-items: center;
+}
+
+.card__footer span {
+  font-size: 12px;
+  color: var(--text-color);
+  margin-inline: 5px;
+  font-weight: 500;
+}
+
+.checklist__card{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 8px;
+}
+
+.card__assignee, .card__duedate, .card__submenu{
+  display: flex;
+}
+
+.card__submenu p{
+  font-size: 14px;
+}
+.card__submenu{
+  /* justify-content: space-between; */
+  align-items: center;
+}
+
+.data__latter{
+  /* content:attr(data-letters); */
+  display:inline-block;
+  font-size:1em;
+  width:2.5em;
+  height:2.5em;
+  line-height:2.5em;
+  text-align:center;
+  border-radius:50%;
+  /* background:plum; */
+  vertical-align:middle;
+  margin-right:1em;
+  color:#000;
+  font-weight: 600;
+}
+
+.completed_tick{
+  margin-top: 1em;
+  width: 30px;
+}
+
+

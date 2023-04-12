@@ -1,0 +1,233 @@
+* {
+    font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", "Oxygen",
+        "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+        sans-serif;
+}
+
+.signup__section {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: var(--sidebar-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup__container {
+    min-width: 440px;
+    background-color: var(--card-back-color);
+    padding: 28px 32px;
+    border-top-left-radius: 8px;
+    border-bottom-left-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(109, 110, 111, 0.08);
+}
+
+.google__login button {
+    background-color: transparent;
+    color: var(--text-color);
+    border: 1px solid #cfcbcb;
+    font-size: 15px;
+    border-radius: 7px !important;
+    /* box-sizing: border-box; */
+    cursor: pointer;
+    display: flex;
+    height: 48px;
+    width: 100%;
+    /* margin-top: 8px; */
+    /* max-width: 300px; */
+    /* overflow: hidden; */
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition-duration: 85ms;
+    transition-property: background-color, border-color, box-shadow;
+    transition-timing-function: ease;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login__button button {
+    background-color: #736BC4;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 7px !important;
+    /* box-sizing: border-box; */
+    cursor: pointer;
+    display: flex;
+    height: 40px;
+    width: 100%;
+    /* margin-top: 8px; */
+    /* max-width: 300px; */
+    /* overflow: hidden; */
+    padding: 6px 12px;
+    position: relative;
+    text-decoration: none;
+    text-overflow: ellipsis;
+    transition-duration: 85ms;
+    transition-property: background-color, border-color, box-shadow;
+    transition-timing-function: ease;
+    -webkit-user-select: none;
+    user-select: none;
+    white-space: nowrap;
+    align-items: center;
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* .google__login button:hover {
+    border: 1px solid #AFABAC !important;
+    background-color: #F9F8F8;
+}
+
+.google__login .google__icon {
+    position: absolute;
+    left: 32px;
+}
+
+.google__icon img {
+    width: 25px;
+    height: 25px;
+} */
+
+/* .or__section {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.or__line {
+    margin: 0 8px;
+}
+
+.before__line,
+.after__line {
+    border-top: 1px solid #edeae9;
+    flex: 1 1 auto;
+    margin-top: 8px;
+    min-width: 1px;
+    padding-top: 8px;
+} */
+
+.email__section input,
+.pwd__section input,
+.cpwd__section input,
+.username__section input {
+    width: 100%;
+    height: 36px;
+    padding: 6px 12px;
+    border-radius: 6px;
+    box-sizing: border-box;
+    border: 1px solid #AFABAC;
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--text-color);
+    background: var(--input-background);
+}
+
+.email__section input:focus,
+.pwd__section input:focus,
+.cpwd__section input:focus,
+.username__section input:focus {
+    outline: none;
+}
+
+.pwd__section,
+.email__section,
+.username__section,
+.cpwd__section {
+    margin-top: 15px;
+}
+
+.eye__icons {
+    position: absolute;
+    right: 10px;
+    top: 15px;
+}
+
+.lock__icon,
+.email__icon,
+.username__icon {
+    position: absolute;
+    left: 10px;
+    top: 15px;
+}
+
+.login__button {
+    margin-top: 25px;
+}
+
+.login__button button:hover {
+    background-color: #575089;
+}
+
+.email__section input,
+.pwd__section input,
+.username__section input,
+.cpwd__section input {
+    margin-top: 7px;
+    padding-left: 35px;
+}
+
+.not__account a {
+    text-decoration: none;
+}
+
+.not__account {
+    font-size: 14px;
+    margin-top: 20px;
+    text-align: center;
+}
+
+.signup__section .right__container {
+    background-color: #EEEDF3;
+    height: 595px;
+    border-top-right-radius: 8px;
+    border-bottom-right-radius: 8px;
+    box-shadow: 0 5px 20px 0 rgba(109, 110, 111, 0.08);
+    width: 440px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signup__section .right__container img {
+    object-fit: cover;
+    height: 400px;
+    width: 350px;
+}
+
+.kanban__logo,
+.login__title {
+    text-align: center;
+}
+
+.kanban__logo {
+    margin-bottom: 32px;
+}
+
+.login__title {
+    margin-bottom: 25px;
+}
+
+.email__section span,
+.pwd__section span,
+.username__section span,
+.cpwd__section span {
+    font-size: 14px;
+    font-weight: 500;
+    color: var(--text-color);
+}

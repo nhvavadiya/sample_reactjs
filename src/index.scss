@@ -1,0 +1,93 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800&display=swap');
+
+:root {
+  --background-color: #f9f8f8 !important;
+  --board-color: #f9f8f8;
+  --card-color: #fff;
+  --text-color: #000;
+  --board-text-color: #1e1f21;
+  --drop-down-color: #fff;
+  --card-box-shadow: #e2dede;
+  --add-btn-hover: #000;
+  --modal-color: #fff;
+  --task-hover: #091e4214;
+  --card-border-hover: rgba(0, 0, 0, 0.363);
+  --card-border: gainsboro;
+  --dashed-border: #000;
+  --add-button-color: #6d6e6f;
+  --user-back-color: #fff;
+  --button-text-color: #6D6E6F;
+  --button-hover-color: #f9f8f8;
+  --icon-color: #AFABAC;
+  --user-icon-color: #292D32;
+  --cmt-time-color: #6d6e6f;
+  --dropdown-background-color: #fff;
+  --sidebar-background: #f9f8f8;
+  --card-back-color: #fff;
+  --select-back-color: #f1f1f1;
+  --cmt-btn-back: #000;
+  --login-girl-container: #EEEDF3;
+  --input-background: #fff;
+  --modal-back-color: #fff;
+  --sidebar-border: #ccc;
+  --profile-modal-back: #F6F6F6;
+  --upload-btn: #ECECEC;
+  --form-border: #DCDCDC;
+  --scrollbar-back: #f2f2f2;
+  --scrollbar-thumb: #ccc;
+  --scrollbar-thumb-hover: #c3c3c3;
+}
+
+[data-theme="dark"] {
+  --background-color: #212121;
+  --board-color: #252525;
+  --card-color: #212121;
+  --card-box-shadow: #2a2a2a;
+  --drop-down-color: #383838;
+  --text-color: #fff;
+  --board-text-color: #fff;
+  --add-btn-hover: #fff;
+  --modal-color: #252525;
+  --task-hover: rgba(65, 103, 241, 0.2);
+  --card-border-hover: rgba(255, 255, 255, 0.363);
+  --card-border: transparent;
+  --dashed-border: #fff;
+  --add-button-color: #fff;
+  --user-back-color: #000;
+  --button-text-color: #fff;
+  --button-hover-color: transparent;
+  --icon-color: #AFABAC;
+  --user-icon-color: #fff;
+  --cmt-time-color: #bababa;
+  --dropdown-background-color: #000;
+  --sidebar-background: #111111;
+  --card-back-color: #1A1A1A;
+  --select-back-color: #1a1a1a;
+  --cmt-btn-back: #4767f1;
+  --login-girl-container: rgba(87, 80, 137, 0.1);
+  --input-background: transparent;
+  --modal-back-color: #111111;
+  --sidebar-border: #cccccc45;
+  --profile-modal-back: #1A1A1A;
+  --upload-btn: rgb(71, 103, 241, 0.2);
+  --form-border: #515151;
+  --scrollbar-back: #424242;
+  --scrollbar-thumb: #686868;
+  --scrollbar-thumb-hover: #808080;
+}
+
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Montserrat", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: var(--text-color);
+  background-color: var(--background-color);
+}
+
+// code {
+//   font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+//     monospace;
+// }

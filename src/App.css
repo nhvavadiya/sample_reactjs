@@ -1,0 +1,210 @@
+body {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.App {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  transition: all 350ms;
+}
+.app_outer {
+  flex: 1;
+  width: 100%;
+  overflow-x: auto;
+}
+
+.app_boards {
+  margin-top: 70px;
+  min-width: fit-content;
+  display: flex;
+  gap: 10px;
+  padding-inline: 0.5rem;
+  color: var(--text-color);
+}
+/* p {
+  font-size: 16px;
+  line-height: 28px;
+} */
+
+::-webkit-scrollbar {
+  width: 5px;
+  height: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* background: #f2f2f2; */
+  background: var(--scrollbar-back);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  /* background: #ccc; */
+  background: var(--scrollbar-thumb);
+  border-radius: 20px 20px 20px 20px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  /* background: #c3c3c3; */
+  background: var(--scrollbar-thumb-hover);
+}
+.add__board > textarea {
+  border: 0.5px solid rgb(167, 167, 167) !important;
+  height: 2rem !important;
+}
+.card_detail > textarea {
+  border: 0.5px solid rgb(167, 167, 167) !important;
+}
+.card__values > p {
+  background: #ccc !important;
+}
+.cardinfo__editable {
+  width: fit-content;
+}
+
+.app__section{
+  display: flex;
+  /* height: 100vh; */
+  height: calc(100vh - 80px);
+}
+
+.sidebar__section{
+  width: 100px;
+  height: 100%;
+  border-right: 1px solid var(--sidebar-border);
+  padding-top: 15px;
+  background: var(--sidebar-background);
+}
+
+.sidebar__section div{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.project__latter{
+  font-size:16px;
+  width:3.5em;
+  height:3.5em;
+  border-radius:25%;
+  color:#000;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.project__latter:hover{
+  cursor: pointer;
+  border: 2px solid #02020240;
+}
+
+.project__tooltip {
+  position: absolute;
+  width: max-content;
+  height: 30px;
+  top: 12px;
+  /* background-color: #000; */
+  color: #000;
+  text-align: center;
+  border-radius: 5px;
+  padding: 3px;
+  visibility: hidden;
+  transition-delay: 0.2s;
+  z-index: 999;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding:10px;
+  font-size: 14px;
+  left: 86px;
+  font-weight: 500;
+}
+
+.arr {
+  position: absolute;
+  width: 0;
+  height: 0;
+  left: -6px;
+  bottom: 3px;
+  border-top: 12px solid transparent;
+  border-bottom: 12px solid transparent;
+  /* border-right: 10px solid #000; */
+}
+
+.project__list:hover .project__tooltip {
+  visibility: unset;
+}
+
+.project__list{
+  position: relative;
+}
+.add__project div{
+  border: 2px dashed var(--dashed-border);
+  font-size: 16px;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 25%;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.add__project{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.add__project div:hover{
+  cursor: pointer;
+}
+.plus__icon{
+  /* color: var(--dashed-border); */
+  height: 16px;
+  width: 16px;
+}
+
+.board__project__name{
+  height: 60px;
+  background: var(--sidebar-background);
+  box-shadow: 2px 2px 4px rgb(0 0 0 / 25%);
+  display: flex;
+  align-items: center;
+  margin: 0;
+  color: var(--text-color);
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  z-index: 1;
+}
+
+.board__project__name p{
+  font-size: 16px;
+  width: 2.5em;
+  height: 2.5em;
+  border-radius: 25%;
+  color: #000;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 10px;
+}
+
+.board__project__name h5{
+  margin-left: 20px;
+  margin-bottom: 0;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+    -webkit-transition: "color 9999s ease-out, background-color 9999s ease-out";
+    -webkit-transition-delay: 9999s;
+}
